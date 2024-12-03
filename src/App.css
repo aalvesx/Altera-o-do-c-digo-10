@@ -1,0 +1,70 @@
+/* Alterando o fundo da página */
+.App {
+  text-align: center;
+  background-color: #f4f4f9; /* Cor de fundo mais clara */
+  padding: 40px;
+  font-family: 'Arial', sans-serif; /* Mudando a fonte da página */
+}
+
+/* Modificando o logo */
+.App-logo {
+  height: 60vmin; /* Aumentando o tamanho do logo */
+  pointer-events: none;
+  border-radius: 50%;
+  border: 6px solid #61dafb;
+  transition: transform 0.5s ease, border-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o logo */
+.App-logo:hover {
+  transform: rotate(180deg); /* Logo gira ao passar o mouse */
+  border-color: #ff6347; /* Mudando a cor da borda no hover */
+}
+
+/* Alterando a aparência do cabeçalho */
+.App-header {
+  background-color: #333333; /* Fundo mais escuro para o cabeçalho */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: #f0f0f0; /* Cor do texto clara */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adicionando sombra ao texto */
+  border-radius: 10px; /* Bordas arredondadas no cabeçalho */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+}
+
+/* Estilizando o link */
+.App-link {
+  color: #61dafb;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Efeito de hover no link */
+.App-link:hover {
+  color: #ff6347; /* Cor de hover mais vibrante */
+  text-decoration: underline;
+}
+
+/* Definindo animação no logo */
+@keyframes App-logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Reduzindo a animação quando a preferência for de movimento reduzido */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 8s linear; /* Acelerando a rotação */
+  }
+}
